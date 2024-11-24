@@ -1,2 +1,2 @@
+flask==2.2.2
 couchbase==4.1.0
-flask==2.2.2  # если используете Flask

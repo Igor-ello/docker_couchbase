@@ -1,5 +1,5 @@
-# Используем официальный Python образ как базовый
-FROM python:3.9-slim
+# Используем официальный образ Python
+FROM python:3.9
 
 # Устанавливаем рабочую директорию
 WORKDIR /app
@@ -10,8 +10,8 @@ COPY . /app
 # Устанавливаем зависимости
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Открываем порт 5000 для Flask
+# Открываем порт
 EXPOSE 5000
 
-# Команда для запуска приложения
+# Запускаем приложение
 CMD ["python", "app/run.py"]
